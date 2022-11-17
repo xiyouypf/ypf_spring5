@@ -14,7 +14,7 @@ import java.util.Collections;
  * @data 2020/12/12
  */
 @Configuration
-@PropertySource("classpath:customer.properties")
+//@PropertySource("classpath:customer.properties")
 public class AddressPropertyConfiguration {
 
     @Bean

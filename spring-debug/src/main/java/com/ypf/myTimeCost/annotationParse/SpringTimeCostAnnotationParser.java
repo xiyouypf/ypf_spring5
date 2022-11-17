@@ -1,15 +1,16 @@
-package com.ypf.myTimeCost;
+package com.ypf.myTimeCost.annotationParse;
 
+import com.ypf.myTimeCost.attribute.DefaultTimeCostAttribute;
+import com.ypf.myTimeCost.attribute.TimeCostAttribute;
 import com.ypf.myTimeCost.anno.TimeCostal;
 import org.springframework.core.annotation.AnnotatedElementUtils;
 import org.springframework.core.annotation.AnnotationAttributes;
-import org.springframework.transaction.interceptor.TransactionAttribute;
 
 import java.lang.reflect.AnnotatedElement;
 
-public class SpringTimeCostAnnotationParser implements TimeCostAnnotationParser{
+public class SpringTimeCostAnnotationParser implements TimeCostAnnotationParser {
     @Override
-    public TimeCostAttribute parseTransactionAnnotation(AnnotatedElement element) {
+    public TimeCostAttribute parseTimeCostAnnotation(AnnotatedElement element) {
         AnnotationAttributes attributes = AnnotatedElementUtils.findMergedAnnotationAttributes(element, TimeCostal.class, false, false);
         if (attributes != null) {
             return parseTimeCostAnnotation(attributes);

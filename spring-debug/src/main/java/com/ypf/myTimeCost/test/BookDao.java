@@ -1,4 +1,4 @@
-package com.ypf.myTimeCost;
+package com.ypf.myTimeCost.test;
 
 import com.ypf.myTimeCost.anno.TimeCostal;
 

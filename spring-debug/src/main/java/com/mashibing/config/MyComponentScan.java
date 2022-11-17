@@ -8,11 +8,11 @@ import org.springframework.core.annotation.Order;
 @ComponentScan("com.mashibing.selftag")
 public class MyComponentScan {
 
-    @ComponentScan("com.mashibing.selftag")
-    @Configuration
-    @Order(90)
-    class InnerClass{
-
-    }
+//    @ComponentScan("com.mashibing.selftag")
+//    @Configuration
+//    @Order(90)
+//    class InnerClass{
+//
+//    }
 
 }

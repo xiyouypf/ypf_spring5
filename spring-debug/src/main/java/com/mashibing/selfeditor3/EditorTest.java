@@ -11,6 +11,7 @@ public class EditorTest {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext =
                 new AnnotationConfigApplicationContext(AddressPropertyConfiguration.class);
+        applicationContext.register(Customer.class);
         System.out.println(applicationContext.getBean(Customer.class));
     }
 }

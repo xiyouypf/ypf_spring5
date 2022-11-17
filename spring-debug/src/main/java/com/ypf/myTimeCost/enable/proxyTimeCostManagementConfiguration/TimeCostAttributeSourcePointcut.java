@@ -1,14 +1,9 @@
-package com.ypf.myTimeCost;
+package com.ypf.myTimeCost.enable.proxyTimeCostManagementConfiguration;
 
+import com.ypf.myTimeCost.attributeSource.TimeCostAttributeSource;
 import org.springframework.aop.ClassFilter;
-import org.springframework.aop.MethodMatcher;
-import org.springframework.aop.Pointcut;
 import org.springframework.aop.support.StaticMethodMatcherPointcut;
-import org.springframework.dao.support.PersistenceExceptionTranslator;
 import org.springframework.lang.Nullable;
-import org.springframework.transaction.TransactionManager;
-import org.springframework.transaction.interceptor.TransactionAttributeSource;
-import org.springframework.transaction.interceptor.TransactionalProxy;
 import org.springframework.util.ObjectUtils;
 
 import java.lang.reflect.Method;
@@ -32,11 +27,6 @@ public abstract class TimeCostAttributeSourcePointcut extends StaticMethodMatche
 
         @Override
         public boolean matches(Class<?> clazz) {
-//            if (TransactionalProxy.class.isAssignableFrom(clazz) ||
-//                    TransactionManager.class.isAssignableFrom(clazz) ||
-//                    PersistenceExceptionTranslator.class.isAssignableFrom(clazz)) {
-//                return false;
-//            }
             TimeCostAttributeSource tas = getTimeCostAttributeSource();
             return (tas == null || tas.isCandidateClass(clazz));
         }

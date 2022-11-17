@@ -1,4 +1,5 @@
-package com.ypf.myTimeCost;
+package com.ypf.myTimeCost.attribute;
 
 public interface TimeCostAttribute {
+
 }

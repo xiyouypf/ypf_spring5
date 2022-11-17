@@ -1,5 +1,6 @@
-package com.ypf.myTimeCost;
+package com.ypf.myTimeCost.enable.proxyTimeCostManagementConfiguration;
 
+import com.ypf.myTimeCost.attributeSource.TimeCostAttributeSource;
 import org.springframework.aop.ClassFilter;
 import org.springframework.aop.Pointcut;
 import org.springframework.aop.support.AbstractBeanFactoryPointcutAdvisor;

@@ -19,5 +19,5 @@
             <aop:after-throwing method="logException" pointcut-ref="myPoint" throwing="e"></aop:after-throwing>
         </aop:aspect>
     </aop:config>
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+    <aop:aspectj-autoproxy/>
 </beans>

@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test {
 
     public static void main(String[] args) {
-        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("factoryBean.xml");
+//        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("factoryBean.xml");
 ////        MyFactoryBean bean1 = (MyFactoryBean) ac.getBean( "&myFactoryBean");
 ////        System.out.println(bean1);
 ////        User bean = (User) ac.getBean("myFactoryBean");
@@ -17,7 +17,7 @@ public class Test {
 ////        User bean2 = (User) ac.getBean("myFactoryBean");
 ////        System.out.println(bean2.getUsername());
 //
-////        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("applicationContext.xml");
+        MyClassPathXmlApplicationContext ac = new MyClassPathXmlApplicationContext("applicationContext.xml");
 ////        System.out.println(ac.getBean(MyPropertySource.class).getName());
 ////        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-${username}.xml");
 ////        Person bean = ac.getBean(Person.class);
@@ -52,8 +52,8 @@ public class Test {
 //        ApplicationContext ac = new ClassPathXmlApplicationContext("public2.xml");
 //        Student bean = ac.getBean(Student.class);
 //        System.out.println(bean);
-
-        // 所有的对象必须只有一个，单例对象
+//
+//         所有的对象必须只有一个，单例对象
 //        A a = new A();
 //        B b = new B();
 

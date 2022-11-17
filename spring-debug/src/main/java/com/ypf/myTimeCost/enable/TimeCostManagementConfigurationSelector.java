@@ -1,10 +1,8 @@
-package com.ypf.myTimeCost;
+package com.ypf.myTimeCost.enable;
 
 import org.springframework.context.annotation.AutoProxyRegistrar;
-import org.springframework.context.annotation.ImportAware;
 import org.springframework.context.annotation.ImportSelector;
 import org.springframework.core.type.AnnotationMetadata;
-import org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration;
 
 import java.util.function.Predicate;
 

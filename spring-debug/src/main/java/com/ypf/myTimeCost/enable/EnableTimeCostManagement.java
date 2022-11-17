@@ -1,10 +1,8 @@
-package com.ypf.myTimeCost.anno;
+package com.ypf.myTimeCost.enable;
 
-import com.ypf.myTimeCost.TimeCostManagementConfigurationSelector;
 import org.springframework.context.annotation.AdviceMode;
 import org.springframework.context.annotation.Import;
 import org.springframework.core.Ordered;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.annotation.*;
 
