@@ -1,14 +1,20 @@
 package com.mashibing.populateBean;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 import java.util.*;
 
 public class Person {
     private int id;
+    @Value("ypf")
     private String name;
     private int age;
     private String gender;
+    @Autowired
     private Address address;
     private String[] hobbies;
     private List<Book> books;

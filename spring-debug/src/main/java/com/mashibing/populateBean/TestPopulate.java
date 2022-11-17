@@ -7,6 +7,7 @@ public class TestPopulate {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("populateBean.xml");
+        ac.getBean("person1");
         ac.close();
     }
 }

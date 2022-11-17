@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
  * @author dyan
  * @data 2020/12/12
  */
+@PropertySource("classpath:customer.properties")
+@Configuration
 public class Customer {
 
     @Value("${customer.name}")

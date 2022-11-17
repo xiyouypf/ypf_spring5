@@ -16,10 +16,10 @@ import java.util.Collections;
 @Configuration
 public class AddressPropertyConfiguration {
 
-//    @Bean
-//    public Customer customer() {
-//        return new Customer();
-//    }
+    @Bean
+    public Customer customer() {
+        return new Customer();
+    }
 
     @Bean
     public static CustomEditorConfigurer editorConfigurer() {
